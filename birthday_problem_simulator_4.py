@@ -4,6 +4,7 @@ import streamlit as st
 import random
 import pandas as pd
 import matplotlib.pyplot as plt
+import japanize_matplotlib
 
 # ==================================================
 # 日本語フォント
