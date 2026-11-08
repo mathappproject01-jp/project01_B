@@ -4,7 +4,23 @@ import streamlit as st
 import random
 import pandas as pd
 import matplotlib.pyplot as plt
-import japanize_matplotlib
+# import japanize_matplotlib
+# import matplotlib.pyplot as plt
+from matplotlib import font_manager
+
+plt.rcParams["font.family"] = "sans-serif"
+
+plt.rcParams["font.sans-serif"] = [
+    "Noto Sans CJK JP",
+    "IPAexGothic",
+    "IPAGothic",
+    "Yu Gothic",
+    "Meiryo",
+    "MS Gothic",
+    "DejaVu Sans"
+]
+
+plt.rcParams["axes.unicode_minus"] = False
 
 # ==================================================
 # 日本語フォント
